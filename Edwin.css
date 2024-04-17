@@ -7,3 +7,8 @@ h1{
   font-family:"jersey 25", sans-serif;
 }
 
+*, ::before, ::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
