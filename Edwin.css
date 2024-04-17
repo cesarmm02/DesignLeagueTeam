@@ -12,3 +12,10 @@ h1{
   padding:0;
   box-sizing: border-box;
 }
+:root{
+--acent-color: #34495e;
+  --bg-color: #ecf0f1;
+  --main-font: "Jersey 25", sans-serif;
+  --sub-font: "arial", sans-serif;
+  --g-ratio: 1.618;
+}
