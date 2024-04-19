@@ -76,6 +76,49 @@ const promptUser = () => {
 
   this.getAge = () => {
     age = prompt('Pick an age:') || '18';
-  }
+    height = parseInt(height);
+    if (height === 1 || height === 2 || height === 3 || height === 4){
+      height = height * 64;
+      return;
+    } else {
+      this.getHeight();
+    }
+  };
+
+  this.getColor = () => {
+    color = prompt('Choose color: Red Blue Green') || 'green';
+    color = color.toLowerCase();
+    if (color === 'red' || color === 'blue' || color === 'green'){
+      return;
+    } else {
+      this.getColor();
+    }
+  };
+
+  this.appendImg = () => {
+    img = document.createElemt('img');
+    let size = 'width:' + height + 'px;height:' + height + 'px;';
+    if (color === 'blue') {
+      img.setAttribute('src', 'imgs/ninja1.png');
+      img.setAttribute('stlye', size);
+      container.appendChild(img);
+    } else if (color === 'green'){
+       img.setAttribute('src', 'imgs/ninja2.png');
+      img.setAttribute('stlye', size);
+      container.appendChild(img);
+    } else if (color === 'red'){
+       img.setAttribute('src', 'imgs/ninja3.png');
+      img.setAttribute('stlye', size);
+      container.appendChild(img);
+    }
+  };
+
+  this.changeBtns = () => {
+    const btn = document.querySelector('button')
+    const btnContainer = document.querySelector('.btns-container');
+    btnContainer.removeChild(btn);
+    btnContainer.innerHTML = 
+      "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> \n 
+  };
   
-}
+};
