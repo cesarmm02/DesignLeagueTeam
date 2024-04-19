@@ -46,6 +46,64 @@ Const button = document.querySelector('#btnCoin');
       //coin effect 
       const coinImg = document.createElement('img');
       coninImg.setAttribute('src', ímgs/coin.png');
+      coinImg.setAttribute('id', 'coin-img'); 
+      coinImg.Style.transform = 'translate(-50%,calc(-100% - ' + ninja.height + 'px)';        
+      container.appendChild(coninImg);
+$('#coin-img').animate({ top: '60%', opacity :1 }, 250);
+$('#coin-img').animate({ top: '70%', opacity: 0}, 250, ()=>{      
+  $('#coin-img').remove();
+button.style.setProperty('background-color', 'transparent');
+button.style.setProperty('border-color', 'var(--accent-color)')
+button.style.setProperty(çolor', 'var(--accent-color');
+});
 
+    };
+  this.pipe = () => {
+    pipeSfx.play();
+  };
+    this.powerUp = () => {
+      powerUpSfx.play();
+    };
 
+const promptUser = () => {
+  let name = propmt('pick a name:') || '18';
+  let age;
+  let height;
+  let color;
 
+  this.getAge = () => {
+    age = promt('pick an age:') || '18';
+    age = parseInt(age);
+    if (isNaN(age);
+    this.getAge();
+  } else {
+    return;
+  }
+};
+
+this.getHeight = () => {
+  height = prompt ('pick height: 1, 2, 3, 4') || 4){
+    height=parseInt(height);
+    if (height == 1 || height == 2 || height ==3 || height == 4){
+      height = height * 64;
+      return;
+    } else {
+      this.getHeight();
+    };
+this.getColor = () => {
+  color = promt('Choose color: Red Blue Green') || 'red';
+  color= color.toLowerCase();
+  if (color == 'red' || color == 'green') {
+    return;
+  } else {
+    this.getColor();
+  }
+};
+
+  this.appendImg = () => {
+    img = document.createElemt(ímg');
+    let size = 'width:' + height +  'px;height:' + height 'px;';
+    if (color == 'blue') {
+      img.setAttribute('src', 'imgs/ninja1.png');
+
+  
