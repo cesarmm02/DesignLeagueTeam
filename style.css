@@ -1,5 +1,5 @@
 body{
-	background-color: #32CD32;
+	background-color: #FF6666;
 }
 
 .rubik-wet-paint-regular {
@@ -29,6 +29,10 @@ body{
 	text-transform: capitalize;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	height: 120px;
+}
+
+h3{
+	color: #FF6666;
 }
 
 .ppl{
