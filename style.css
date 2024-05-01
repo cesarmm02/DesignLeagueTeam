@@ -1,3 +1,11 @@
+body{
+	background-color: #cc3300;
+}
+
+.title {
+	
+}
+
 .banner{
 	background-color: #FFD700;
 	margin: 15px;
@@ -10,27 +18,27 @@
 }
 
 .ppl{
-  margin: 10px;
-  padding: 10px;
-  overflow: hidden;
-  position: absolute;
-  right: 5em;
-  top: 15px;
-  font-size: 2em;
-  text-align: center;
-  z-index: 1;
+ 	 margin: 10px;
+ 	 padding: 10px;
+ 	 overflow: hidden;
+ 	 position: absolute;
+ 	 right: 5em;
+ 	 top: 15px;
+ 	 font-size: 2em;
+ 	 text-align: center;
+ 	 z-index: 1;
 }
 .ppl a{
-  background-color: #FFD700;
-  display: none;
-  color: #00FF00;
-  padding: 2px;
-  font-size: 0.5em;
+ 	 background-color: #FFD700;
+ 	 display: none;
+  	color: #00FF00;
+  	padding: 2px;
+ 	 font-size: 0.5em;
 }
 .ppl:hover a{
-  display: block;
+ 	 display: block;
 }
 .ppl a:hover{
-  color: #FFD700;
-  background-color: #00FF00;
+ 	 color: #FFD700;
+ 	 background-color: #00FF00;
 }
