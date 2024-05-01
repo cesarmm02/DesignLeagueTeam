@@ -1,5 +1,3 @@
-
-
 .banner{
 	background-color: #FFD700;
 	margin: 15px;
@@ -11,7 +9,7 @@
 	height: 120px;
 }
 
-.menu{
+.ppl{
   margin: 10px;
   padding: 10px;
   overflow: hidden;
@@ -22,17 +20,17 @@
   text-align: center;
   z-index: 1;
 }
-.menu a{
+.ppl a{
   background-color: #FFD700;
   display: none;
   color: #00FF00;
   padding: 2px;
   font-size: 0.5em;
 }
-.menu:hover a{
+.ppl:hover a{
   display: block;
 }
-.menu a:hover{
+.ppl a:hover{
   color: #FFD700;
   background-color: #00FF00;
 }
