@@ -11,7 +11,7 @@ body{
 	margin: 15px;
 	padding: 10px;
 	border: 3px solid #32CD32;
-	box-shadow: 1px 3px 30px 1px #00FF00;
+	box-shadow: 1px 3px 30px 1px #32CD32;
 	text-transform: capitalize;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	height: 120px;
@@ -31,7 +31,7 @@ body{
 .ppl a{
  	 background-color: #FFD700;
  	 display: none;
-  	color: #00FF00;
+  	color: #32CD32;
   	padding: 2px;
  	 font-size: 0.5em;
 }
@@ -40,5 +40,5 @@ body{
 }
 .ppl a:hover{
  	 color: #FFD700;
- 	 background-color: #00FF00;
+ 	 background-color: #32CD32;
 }
