@@ -2,8 +2,22 @@ body{
 	background-color: #32CD32;
 }
 
+.rubik-wet-paint-regular {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .title {
-	
+	font-family: font-family: "Rubik Wet Paint", system-ui;
+}
+
+.desc{
+	background-color: #FFD700;
+	margin: 15px;
+	padding: 10px;
+	text-transform: capitalize;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .banner{
