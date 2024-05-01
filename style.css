@@ -3,10 +3,9 @@
 .banner{
 	margin: 15px;
 	padding: 10px;
-	border: 3px solid #9393cc;
-	box-shadow: 1px 3px 30px 1px #d8d8fd;
+	border: 3px solid #FFD700;
+	box-shadow: 1px 3px 30px 1px #DAA520;
 	text-transform: capitalize;
-	text-shadow: 1px 1px #9393cc ;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	height: 120px;
 }
