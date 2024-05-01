@@ -1,10 +1,11 @@
 
 
 .banner{
+	background-color: #FFD700;
 	margin: 15px;
 	padding: 10px;
-	border: 3px solid #FFD700;
-	box-shadow: 1px 3px 30px 1px #DAA520;
+	border: 3px solid #32CD32;
+	box-shadow: 1px 3px 30px 1px #00FF00;
 	text-transform: capitalize;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	height: 120px;
