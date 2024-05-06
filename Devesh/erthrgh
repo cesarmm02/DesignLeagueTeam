@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+   <title>Basic JavaScript</title>
+
+<style>
+body{
+background-color:skyblue;
+}
+button{
+background-color:blue;
+color: lightgreen;
+border-color: lawngreen;
+border-radius: 15px;
+font-family: Trebuchet MS;
+font-size: 16px;
+font-weight: bold;
+}
+#animate{
+background-color:green;
+width:50px;
+height:50px;
+position: absolute; 
+border-radius: 5px;
+}
+#container{
+background-color:lightgreen;
+width:300px;
+height:300px;
+position: relative; 
+border-style: solid;
+border-weight: 2px;
+border-color: black;
+border-radius: 10px;
+}
+#coorBox{
+border-radius: 10px;
+border-style: solid;
+border-weight: 1px;
+border-color: black;
+}
+hr{
+border-top: 3px solid blue;
+border-radius: 5px;
+}
+h1{
+font-family: courier new;
+color: darkblue;
+}
+p{
+font-family: courier new;
+font-size: 16px;
+font-weight: bold;
+color: darkblue;
+}
+</style>
+
+ </head>
+
+ <body>
+  <center>
+  <h1>JavaScript Output Below</h1> 
+  <hr>
+  <button type="button" onclick="clickMe()">
+   Add 5+3
+  </button>
+
+  <button type="button" onclick="subtract()">
+   Subtract 5-2
+  </button>
+
+  <button type="button" onclick="multiply()">
+   Multiply 6*5
+  </button>
+
+  <button type="button" onclick="divide()">
+   Divide 6/5
+  </button>
+
+  <button type="button" onclick="hello()">
+   Greet
+  </button>
+
+  <p id="demo">This will change with JavaScript</p>
+
+  <div id="coorBox" style="background-color:lawngreen; width:100px; height:100px;" onmousemove="moveFunk(event)" onmouseout="clearCoor()"></div>
+  <hr>
+  <br>
+  <button type="button" onclick="moveIt()">Move Diagonal</button> 
+  <button type="button" onclick="moveItBack()">Move Diagonal Back</button>
+  <button type="button" onclick="moveOpp()">Move Opposite</button> 
+  <button type="button" onclick="moveOppBack()">Move Opposite Back</button>
+  <button type="button" onclick="moveRight()">Move Right</button>
+  <button type="button" onclick="moveDown()">Move Down</button> 
+  <br> 
+  <p>*Note: Move Opposite and Move Opposite Back will only work if clicked first (before any other button), if they do not work properly reload the page and try again.*</p>
+  
+  <div id="container">
+    <div id="animate"></div>
+  </div>
+ 
+ </center>
+ <script>
+
+  function moveIt(){
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos=0
+   clearInterval(id)
+   id=setInterval(frame,5)
+   function frame(){
+     if (pos==250){
+      clearInterval(id)
+     }
+     else{
+      pos++
+      elem.style.top = pos+"px"
+      elem.style.left = pos+"px"
+     }
+   }
+  }
+
+  function moveItBack(){
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos=250
+   clearInterval(id)
+   id=setInterval(frame,5)
+   function frame(){
+     if (pos==0){
+      clearInterval(id)
+     }
+     else{
+      pos--
+      elem.style.top = pos+"px"
+      elem.style.left = pos+"px"
+     }
+   }
+  }
+
+function moveOpp(){
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos=1
+   clearInterval(id)
+   id=setInterval(frame,5)
+   function frame(){
+     if (pos==250){
+      clearInterval(id)
+     }
+     else{
+      pos++
+      elem.style.top = pos+"px"
+      elem.style.right = pos+"px"
+     }
+   }
+  }
+
+ function moveOppBack(){
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos=250
+   clearInterval(id)
+   id=setInterval(frame,5)
+   function frame(){
+     if (pos==0){
+      clearInterval(id)
+     }
+     else{
+      pos--
+      elem.style.top = pos+"px"
+      elem.style.right = pos+"px"
+     }
+   }
+  }
+
+  function moveRight(){
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos=0
+   clearInterval(id)
+   id=setInterval(frame,5)
+   function frame(){
+     if (pos==250){
+      clearInterval(id)
+     }
+     else{
+      pos++
+      elem.style.left = pos+"px"
+      elem.style.right = pos+"px"
+     }
+   }
+  }
+
+  function moveDown(){
+   let id = null
+   const elem = document.getElementById("animate")
+   let pos=0
+   clearInterval(id)
+   id=setInterval(frame,5)
+   function frame(){
+     if (pos==250){
+      clearInterval(id)
+     }
+     else{
+      pos++
+      elem.style.top = pos+"px"
+      elem.style.down = pos+"px"
+     }
+   }
+  }
+
+  function moveFunk(e){
+   let x = e.clientX
+   let y = e.clientY
+   let coor = "Coordinates:("+x+", "+y+")"
+   document.getElementById("demo").innerHTML = coor
+  }
+  function clearCoor(){
+  document.getElementById("demo").innerHTML="  " 
+  }
+
+  function clickMe(){
+    document.getElementById("demo").innerHTML=5+3
+  }
+  function subtract(){
+    document.getElementById("demo").innerHTML=5-2
+  }
+  function multiply(){
+    document.getElementById("demo").innerHTML=6*5
+  }
+  function divide(){
+    document.getElementById("demo").innerHTML=6/5
+  }
+   function hello(){
+    document.getElementById("demo").innerHTML="Hello World!"
+  }
+
+ </script> 
+
+
+ </body> 
+
+</html> 
+
+
+
