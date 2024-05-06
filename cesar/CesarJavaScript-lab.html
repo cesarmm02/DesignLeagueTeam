@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+
+   <title>basic JavaScript</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wellfleet&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+   <style>
+
+	hr {
+	  border-top: 2px dashed darkgoldenrod;
+	}
+
+	.bree-serif-regular {
+	  font-family: "Bree Serif", serif;
+	  font-weight: 400;
+	  font-style: normal;
+	}
+
+	.wellfleet-regular {
+	  font-family: "Wellfleet", monospace;
+	  font-weight: 400;
+	  font-style: normal;
+	}
+
+	
+	h1{
+	font-family: "Wellfleet", sans-serif;
+	}
+
+	body{
+	  background-color: linen;
+	  color: sandybrown;
+	  font-weight: 700;
+	  font-family: "Bree Serif", sans-serif;
+	}
+
+	div{
+	  background-color:salmon; 
+	  width:200px; 
+	  height:200px;
+	  border: 2px solid darkgoldenrod;
+	}
+
+	button{
+	  background-color: cornsilk;
+	  color: darkgoldenrod;
+	  border: 2px solid darkgoldenrod;
+	  font-family: "Bree Serif", sans-serif;
+	  transition: background-color 1s;
+	}
+
+	button:hover {
+	  background-color: ivory;
+	}
+
+	#animate{
+	  background-color: cornsilk; 
+	  width:50px; 
+	  height:50px;
+	  border: 0px;
+	  position: absolute;
+	}
+
+	#container{
+	  background-color:peachpuff; 
+	  width:400px; 
+	  height:400px;
+	  position: relative;
+	}
+   </style>
+
+ </head>
+
+ <body>
+ <center>
+   <h1>JavaScript Output below</h1>
+
+   <button type="button" onclick="add()">
+	Add 5+3
+   </button>
+
+   <button type="button" onclick="sub()">
+	Subtract 9-7
+   </button>
+
+   <button type="button" onclick="mul()">
+	Multiply 8*2
+   </button>
+
+   <button type="button" onclick="div()">
+	Divide 20/4
+   </button>
+
+   <button type="button" onclick="hello()">
+	Hello World
+   </button>
+
+   <p id="demo">This will change with JavaScript.</p>
+
+   <div onmousemove="moveFunc(event)" onmouseout="clearCoor()"></div>
+
+	<br>
+
+<hr>
+
+	<br>
+
+   <button type="button" onclick="move()">
+	Move to bottom right
+   </button>
+   <button type="button" onclick="moveB()">
+	Move to top left
+   </button>
+   <button type="button" onclick="moveR()">
+	Move right
+   </button>
+   <button type="button" onclick="moveD()">
+	Move down
+   </button>
+   <button type="button" onclick="moveU()">
+	Move up
+   </button>
+   <button type="button" onclick="moveL()">
+	Move left
+   </button>
+
+	<br>
+	<br>
+
+   <div id="container">
+	<div id="animate"></div>
+   </div>
+</center>
+   <script>
+
+   	function add(){
+	  document.getElementById("demo").innerHTML= 5+3
+	}
+
+	function sub(){
+	  document.getElementById("demo").innerHTML= 9-7
+	}
+
+	function mul(){
+	  document.getElementById("demo").innerHTML= 8*2
+	}
+
+	function div(){
+	  document.getElementById("demo").innerHTML= 20/4
+	}
+
+   	function hello(){
+	  document.getElementById("demo").innerHTML= "Hello World"
+	}
+
+	function moveFunc(e){
+	  let x = e.clientX
+	  let y = e.clientY
+	  let coor = "Coordinates: (" + x + "," + y + ")"
+	  document.getElementById("demo").innerHTML= coor
+	}
+
+	function clearCoor(){
+	  document.getElementById("demo").innerHTML = "This will change with JavaScript."
+	}
+
+	function move(){
+	  let id = null
+	  const elem = document.getElementById("animate");
+	  let pos = 0
+	  clearInterval(id)
+	  id = setInterval(frame,5)
+	  function frame(){
+
+	    if (pos == 350){
+		    clearInterval(id)
+	    }
+
+	    else {
+	      pos++
+	      elem.style.top = pos + "px"
+	      elem.style.left = pos + "px"
+	    }
+	  }
+	}
+
+	 function moveB(){
+	  let id = null
+	  const elem = document.getElementById("animate");
+	  let pos = 350
+	  clearInterval(id)
+	  id = setInterval(frame,5)
+	  function frame(){
+
+	    if (pos == 0){
+		    clearInterval(id)
+	    }
+
+	    else {
+	      pos--
+	      elem.style.top = pos + "px"
+	      elem.style.left = pos + "px"
+	    }
+	  }
+	}
+
+	function moveR(){
+	  let id = null
+	  const elem = document.getElementById("animate");
+	  let pos = 0
+	  clearInterval(id)
+	  id = setInterval(frame,5)
+	  function frame(){
+
+	    if (pos == 350){
+		    clearInterval(id)
+	    }
+
+	    else {
+	      pos++
+	      elem.style.left = pos + "px"
+	    }
+	  }
+	}
+
+	function moveD(){
+	  let id = null
+	  const elem = document.getElementById("animate");
+	  let pos = 0
+	  clearInterval(id)
+	  id = setInterval(frame,5)
+	  function frame(){
+
+	    if (pos == 350){
+		    clearInterval(id)
+	    }
+
+	    else {
+	      pos++
+	      elem.style.top = pos + "px"
+	    }
+	  }
+	}
+
+	function moveU(){
+	  let id = null
+	  const elem = document.getElementById("animate");
+	  let pos = 350
+	  clearInterval(id)
+	  id = setInterval(frame,5)
+	  function frame(){
+
+	    if (pos == 0){
+		    clearInterval(id)
+	    }
+
+	    else {
+	      pos--
+	      elem.style.top = pos + "px"
+	    }
+	  }
+	}
+
+	function moveL(){
+	  let id = null
+	  const elem = document.getElementById("animate");
+	  let pos = 350
+	  clearInterval(id)
+	  id = setInterval(frame,5)
+	  function frame(){
+
+	    if (pos == 0){
+		    clearInterval(id)
+	    }
+
+	    else {
+	      pos--
+	      elem.style.left = pos + "px"
+	    }
+	  }
+	}
+
+   </script>
+
+ </body>
+
+</html>
