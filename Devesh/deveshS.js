@@ -105,29 +105,29 @@ const promptUser = () => {
      }; 
         
     this.appendImg = () => {
-             img = document.createElemt('img');
+             img = document.createElement('img');
              let size = 'width:' + height + 'px;height:' + height + 'px;';
              if (color === 'blue') {
                 img.setAttribute('src', 'img/ninja1.png');
-                img.setAttribute('stlye', size);
+                img.setAttribute('style', size);
                 container.appendChild(img);
-    } else if (color === 'green'){
+    } else if (color === 'green') {
                 img.setAttribute('src', 'img/ninja2.png');
-                img.setAttribute('stlye', size);
+                img.setAttribute('style', size);
                 container.appendChild(img);
-    } else if (color === 'red'){
+    } else if (color === 'red') {
                 img.setAttribute('src', 'img/ninja3.png');
-                img.setAttribute('stlye', size);
+                img.setAttribute('style', size);
                 container.appendChild(img);
     }
   };
 
     this.changeBtns = () => {
-             const btn = document.querySelector('button')
+             const btn = document.querySelector('button');
              const btnContainer = document.querySelector('.btns-container');
              btnContainer.removeChild(btn);
              btnContainer.innerHTML = 
-                "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipes/button> \n <button onclick='ninja.powerUp()' id='btnPowerUp'>Power Ups/button>";
+                "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> \n <button onclick='ninja.powerUp()' id='btnPowerUp'>Power Ups/button>";
              const newBtns = document.querySelectorAll('button'); 
              for (let i = 0: i < newBtns.length; i++) { 
                 newBtns[i].style.setProperty('margin-left', '1.5rem');
