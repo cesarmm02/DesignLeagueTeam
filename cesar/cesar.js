@@ -1,15 +1,3 @@
-//Loader
-window.addEventListener('load', () => {
-  const loader = document.querySelector('.loader');
-  setTimeout(() => {
-      loader.setAttribute('style', 'opacity: 0;');
-  }, 500);
-  setTimeout(() => {
-      loader.parentNode.removeChild(loader);
-      document.body.style.overflow = 'initial';
-  }, 1000);
-});
-
 const coinSfx = new Sfx('sfx/Mario Coin.wav');
 const pipeSfx = new Sfx('sfx/Mario Pipe.wav');
 const powerUpSfx = new Sfx('sfx/Mario Powerup.wav');
@@ -76,11 +64,21 @@ const promptUser = () => {
 
   this.getAge = () => {
     age = prompt('Pick an age:') || '18';
+    age = parseInt(age);
+    if (isNaN(age)){
+      this.getAge();
+    } else {
+      return;
+    }
+  };
+
+  this.getHeight() = () => {
+    height = prompt('Pick Height: 1, 2, 3, 4') || 4;
     height = parseInt(height);
     if (height === 1 || height === 2 || height === 3 || height === 4){
-      height = height * 64;
+      height = height * 64
       return;
-    } else {
+    } else{
       this.getHeight();
     }
   };
@@ -88,7 +86,7 @@ const promptUser = () => {
   this.getColor = () => {
     color = prompt('Choose color: Red Blue Green') || 'green';
     color = color.toLowerCase();
-    if (color === 'red' || color === 'blue' || color === 'green'){
+    if (color === 'red' || color === 'blue' || color === 'red'){
       return;
     } else {
       this.getColor();
@@ -96,7 +94,7 @@ const promptUser = () => {
   };
 
   this.appendImg = () => {
-    img = document.createElemt('img');
+    img = document.createElement('img');
     let size = 'width:' + height + 'px;height:' + height + 'px;';
     if (color === 'blue') {
       img.setAttribute('src', 'img/ninja1.png');
@@ -114,13 +112,13 @@ const promptUser = () => {
   };
 
   this.changeBtns = () => {
-    const btn = document.querySelector('button')
+    const btn = document.querySelector('button');
     const btnContainer = document.querySelector('.btns-container');
     btnContainer.removeChild(btn);
     btnContainer.innerHTML = 
-      "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipes/button> \n <button onclick='ninja.powerUp()' id='btnPowerUp'>Power Ups/button>";
+      "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> \n <button onclick='ninja.powerUp()' id='btnPowerUp'>Power Up</button>";
     const newBtns = document.querySelectorAll('button'); 
-    for (let i = 0: i < newBtns.length; i++) { 
+    for (let i = 0; i < newBtns.length; i++) { 
       newBtns[i].style.setProperty('margin-left', '1.5rem');
     }
 
