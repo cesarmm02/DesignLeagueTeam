@@ -8,11 +8,14 @@ h1 {
    font-family: "Abel", sans-serif;
 }
 
-*,::before, ::after{
+*,
+::before, 
+::after {
   margin:0;
   padding:0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
+
 :root{
   --accent-color: #34495e;
   --bg-color: #ecf0f1;
@@ -20,27 +23,35 @@ h1 {
   --sub-font: "Arial", sans-serif;
   --g-ratio: 1.618;
 } 
-body{
+
+body {
   font-family: var(--sub-font);
   font-weight: 300;
   background-color: var(--bg-color);
   color: #111;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
-hr{
+
+hr {
   margin-top: 0.5rem;
   width: 70px;
   height: 5px;
   background-color: #34495e;
   border: none; 
 }
-h1, h2, h3, .title{
+
+h1, 
+h2, 
+h3, 
+.title {
   font-family: var(--main-font);
   font-weight: 900; 
 }
+
 .title{
   color: var(--accent-color);
 }
+
 .wrapper {
   display: flex;
   felx-direction: column;
@@ -52,11 +63,13 @@ h1, h2, h3, .title{
   margin: 0 auto; 
   background-color: inherit; 
 }
+
 .container {
   width: 100%;
   height: 100%;
   padding: 5rem 0;
 }
+
 .lab-info h2,
 .lab-info h3 {
   font-weight: initial;
@@ -71,9 +84,11 @@ h1, h2, h3, .title{
   display: flex;
   width: 100%;
 }
+
 .lab-info {
   width: 50%;
 }
+
 .content {
   margin-top: 2rem;
   width: 100%;
@@ -81,6 +96,7 @@ h1, h2, h3, .title{
   position: relative;
   border: 2px solid #ccc;
 }
+
 .btns-container {
   width: 50%;
   display: flex;
@@ -88,6 +104,7 @@ h1, h2, h3, .title{
   align-items: flex-end;
   position: relative;
 }
+
 button {
   background-color: transparent;
   border: 2px solid var(--accent-color);
@@ -98,7 +115,7 @@ button {
 
 #btnCoin,
 #btnPipe,
-btnPowerUp {
+#btnPowerUp {
   transition: all ease 100ms;
   outline: none !important;
 }
@@ -109,6 +126,7 @@ img {
   left: 50%;
   transform: translate(-50%. -100%);
 }
+
 .floor {
   width: 100%;
   height: 30%;
@@ -126,7 +144,7 @@ img {
   position: absolute; 
   left: 50%;
   top: 70%;
-  height: 60%;
+  height: 60px;
 }
 
 
