@@ -45,7 +45,7 @@ Const button = document.querySelector('#btnCoin');
 
       //coin effect 
       const coinImg = document.createElement('img');
-      coninImg.setAttribute('src', ímgs/coin.png');
+      coninImg.setAttribute('src', imgs/coin.png');
       coinImg.setAttribute('id', 'coin-img'); 
       coinImg.Style.transform = 'translate(-50%,calc(-100% - ' + ninja.height + 'px)';        
       container.appendChild(coninImg);
