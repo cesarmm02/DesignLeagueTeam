@@ -57,7 +57,7 @@ function Ninjas(name, age, height, color){
 
 const promptUser = () => {
 
-  let name = prompt('Pick a name:') || '18';
+  let name = prompt('Pick a name:') || 'Ninja:';
   let age;
   let height;
   let color;
