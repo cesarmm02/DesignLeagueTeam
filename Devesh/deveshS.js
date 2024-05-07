@@ -117,7 +117,7 @@ const promptUser = () => {
              btnContainer.innerHTML = 
                 "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> \n <button onclick='ninja.powerUp()' id='btnPowerUp'>Power Ups/button>";
              const newBtns = document.querySelectorAll('button'); 
-             for (let i = 0: i < newBtns.length; i++) { 
+             for (let i = 0; i < newBtns.length; i++) { 
                 newBtns[i].style.setProperty('margin-left', '1.5rem');
     }
 
