@@ -7,9 +7,11 @@ h1{
 font-family: "Jersey 25", sans-serif;
 }
 
-*, ::before, ::after{
-  margin:0;
-  padding:0;
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 :root{
@@ -19,20 +21,22 @@ font-family: "Jersey 25", sans-serif;
   --sub-font: "arial", sans-serif;
   --g-ratio: 1.618;
 }
+
 body{
   font-family: var(--sub-font);
   font-family: 300;
   background-color: var(--bg-color);
-  color:#111;
-  font-size: 1.2em; 
+  color: #111;
+  font-size: 1.2rem; 
 } 
 hr{
-  margin-top:0.5rem;
+  margin-top: 0.5rem;
   width:70px;
   height: 5px;
   background-color:#34495e;
   border:none;
 }
+
 h1,h2,h3, .title{
 font-family: var(--main-font);
   font-weight: 900;
@@ -42,8 +46,8 @@ color:var(--accent-color);
 }
 .wrapper{
   display:flex;
-  flex-direction:column;
-  justify-content:center;
+  flex-direction: column;
+  justify-content: center;
   width: calc(100vw / var(--g-ratio));
   height: 100vh;
   min-width:800px;
@@ -67,7 +71,7 @@ color:var(--accent-color);
 
 .top-container{
 display: flex;
-  width:100%
+  width: 100%
 }
 
 .lab-info{
