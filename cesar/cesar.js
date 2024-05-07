@@ -55,7 +55,7 @@ function Ninjas(name, age, height, color){
   };
 }
 
-const promptUser = () => {
+function promptUser() {
 
   let name = prompt('Pick a name:') || 'Ninja:';
   let age;
