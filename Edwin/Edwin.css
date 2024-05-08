@@ -6,6 +6,7 @@
 h1{
 font-family: "Jersey 25", sans-serif;
 }
+
 *, ::before, ::after{
   margin: 0;
   padding: 0;
