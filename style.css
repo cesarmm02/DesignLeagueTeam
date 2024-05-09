@@ -49,9 +49,9 @@ h3{
 .ppl a{
  	 background-color: #FFD700;
  	 display: none;
-  	color: #32CD32;
-  	padding: 2px;
- 	 font-size: 0.5em;
+  	 color: #32CD32;
+  	 padding: 2px;
+ 	 font-size: 1em;
 }
 .ppl:hover a{
  	 display: block;
