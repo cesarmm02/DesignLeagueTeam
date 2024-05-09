@@ -1,3 +1,15 @@
+.mockup{
+	position: absolute;
+	right: 5px;
+	width: 50%; 
+}
+
+.slides{
+	position: absolute;
+	left: 5px;
+	width: 50%;
+}
+
 body{
 	background-color: #FF6666;
 }
