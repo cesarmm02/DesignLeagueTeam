@@ -2,7 +2,7 @@
 	position: absolute;
 	right: 5px;
 	width: 50%; 
-	padding: 5px;
+	margin: 5px;
 }
 
 .slides{
@@ -10,7 +10,7 @@
 	left: 5px;
 	width: 50%;
         height: 500px;
-	padding: 5px;
+	margin: 5px;
 }
 
 body{
