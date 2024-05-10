@@ -16,8 +16,8 @@ font-family: "Jersey 25", sans-serif;
 :root{
   --accent-color: #34495e;
   --bg-color: #ecf0f1;
-  --main-font: "Alata", sans-serif;
-  --sub-font: "Arial", sans-serif;
+  --main-font: "Jersey 25", sans-serif;
+  --sub-font: "Jersey 25", sans-serif;
   --g-ratio: 1.618;
 }
 
